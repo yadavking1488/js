@@ -1,0 +1,107 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: darkblue;
+}
+
+.phone-screen {
+  width: 360px; /* adjust to your desired phone screen width */
+  height: 640px; /* adjust to your desired phone screen height */
+  background-color: #fff;
+  border: 1px solid #0a0a0a;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #ec2727;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.time {
+  font-size: 18px;
+}
+
+.signal {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.battery {
+  font-size: 16px;
+}
+
+.screen-content {
+  width: 100%;
+  height: calc(100% - 40px - 50px); /* adjust for header and nav bar heights */
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.home-screen {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.app-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-item {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.nav-item img {
+  width: 20px;
+  height: 20px;
+}

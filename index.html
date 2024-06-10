@@ -1,0 +1,69 @@
+<!-- phone_interface.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Interface</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Phone Screen -->
+    <div class="phone-screen">
+      <!-- Header -->
+      <div class="header">
+        <div class="time">12:45 PM</div>
+        <div class="signal"></div>
+        <div class="battery">
+          <i class="fa-solid fa-wifi"></i> &nbsp;
+          <i class="fa-solid fa-battery-half"></i>
+        </div>
+      </div>
+
+      <!-- Screen Content -->
+      <div class="screen-content">
+        <!-- Home Screen -->
+        <div class="home-screen">
+          <div class="app-grid">
+            <!-- App Icons -->
+            <div class="app-icon">
+              <img
+                src="img/insta.png"
+                alt="App 1"
+                onclick="location.href='insta.html'"
+              />
+            </div>
+            <div class="app-icon">
+              <img src="img/whatsapp.png" alt="App 2" />
+            </div>
+            <!-- + more app icons -->
+          </div>
+        </div>
+
+        <!-- Other Screens (e.g., Lock Screen, Notifications) -->
+        <!-- <div class="lock-screen">...</div> -->
+        <!-- <div class="notifications">...</div> -->
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="nav-bar">
+        <div class="nav-item">
+          <img src="img/home.png" alt="" />
+        </div>
+        <div class="nav-item">
+          <img src="img/back.png" alt="Back" />
+        </div>
+        <!-- + more nav items -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
